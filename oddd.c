@@ -4,11 +4,15 @@ int main()
 	int n,m,i;
 	scanf("%d",&n);
 	scanf("%d",&m);
-	for(i=i+1;i<m;i++)
+	if(n<=1000)
 	{
-		if(i%2!=0)
+		
+		for(i=i+1;i<m;i++)
 		{
-			printf("%d\n",i);
+			if(i%2!=0)
+			{
+				printf("%d\n",i);
+			}
 		}
 	}
 	return 0;
