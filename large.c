@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-  int array[50], size, i, largest;
+  int array[50], size, i, smallest,location=0;
 
    printf("\n Enter the size of the array: ");
    
@@ -12,24 +12,19 @@ int main()
         for (i = 0; i < size; i++)
 	{
 		scanf("%d", &array[i]);
-		 largest = array[0];
+		 smallest = array[i];
 	}
 
         for (i = 1; i < size; i++) 
 
         {
-		if (largest < array[i])
-		largest = array[i];
-
+		if (smallest > array[i])
+		location = i+1;
 	}
 
- 
+  printf("\n smallest present in the given array is : %d", smallest);
 
-        printf("\n largest element present in the given array is : %d", largest);
-
- 
-
-        return 0;
+   return 0;
 }
 
  
